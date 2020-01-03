@@ -1,0 +1,30 @@
+{
+  "name": "@theme-context-storybook-repro/mobile",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "prestart": "npm run compile",
+    "start": "react-native start",
+    "studio": "studio android",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "xcode": "open ios/myprojectname.xcworkspace"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.7.0",
+    "react": "^16.9.0",
+    "react-native": "^0.61.5",
+    "react-native-gesture-handler": "^1.5.2",
+    "react-native-reanimated": "^1.4.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "react-test-renderer": "^16.11.0"
+  }
+}
