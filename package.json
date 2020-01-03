@@ -14,7 +14,7 @@
     "delete:metro-cache": "find . -name \"metro-cache\" -exec rm -rf '{}' +",
     "delete:node_modules": "find . -name \"node_modules\" -exec rm -rf '{}' +",
     "delete:yarn.lock": "find . -name \"yarn.lock\" -exec rm -rf '{}' +",
-    "ios": "yarn workspace @theme-context-storybook-repro/mobile ios",
+    "ios": "yarn pod:install && yarn workspace @theme-context-storybook-repro/mobile ios",
     "lint": "eslint --fix --ext .js,jsx,.ts,.tsx",
     "pod:install": "cd packages/mobile/ios && pod install",
     "pod:remove": "rm -rf packages/mobile/ios/Pods",
