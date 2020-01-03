@@ -1,0 +1,17 @@
+**/__snapshots__/**
+**/build/**
+**/dist/**
+**/deploy/**
+**/node_modules/**
+**/public/**
+
+/coverage/**
+/docs/**
+/jsdoc/**
+/templates/**
+/tests/bench/**
+/tests/fixtures/**
+/tests/performance/**
+/tmp/**
+
+!.eslintrc.js
