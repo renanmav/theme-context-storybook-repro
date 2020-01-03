@@ -8,12 +8,19 @@
     "packages/*"
   ],
   "scripts": {
-    "delete:all": "yarn delete:metro-cache && yarn delete:node_modules && yarn delete:yarn.lock",
+    "android": "yarn workspace @theme-context-storybook-repro/mobile android",
+    "delete:all": "yarn delete:metro-cache && yarn delete:node_modules && yarn delete:yarn.lock && yarn delete:dist",
+    "delete:dist": "find . -name \"dist\" -exec rm -rf '{}' +",
     "delete:metro-cache": "find . -name \"metro-cache\" -exec rm -rf '{}' +",
     "delete:node_modules": "find . -name \"node_modules\" -exec rm -rf '{}' +",
     "delete:yarn.lock": "find . -name \"yarn.lock\" -exec rm -rf '{}' +",
+    "ios": "yarn workspace @theme-context-storybook-repro/mobile ios",
     "lint": "eslint --fix --ext .js,jsx,.ts,.tsx",
-    "storybook": "yarn workspace @theme-context-storybook-repro/components start:storybook"
+    "pod:install": "cd packages/mobile/ios && pod install",
+    "pod:remove": "rm -rf packages/mobile/ios/Pods",
+    "storybook": "yarn workspace @theme-context-storybook-repro/components start:storybook",
+    "web": "yarn workspace @theme-context-storybook-repro/web start",
+    "xcode": "yarn workspace @theme-context-storybook-repro/mobile xcode"
   },
   "lint-staged": {
     "*.yml": [

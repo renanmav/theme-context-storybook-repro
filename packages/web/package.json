@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "prebuild": "npm run compile",
     "build": "react-app-rewired build",
+    "compile": "tsc -b",
     "eject": "react-app-rewired eject",
+    "prestart": "npm run compile",
     "start": "react-app-rewired start",
     "test": "react-app-rewired test"
   },
@@ -15,6 +18,7 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "@theme-context-storybook-repro/components": "1.0.0",
     "react": "^16.9.0",
     "react-art": "^16.9.0",
     "react-dom": "^16.9.0",

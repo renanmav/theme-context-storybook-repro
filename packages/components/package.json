@@ -1,0 +1,35 @@
+{
+  "name": "@theme-context-storybook-repro/components",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:storybook": "build-storybook --docs -o ./dist -c ./.storybook",
+    "compile": "tsc -b",
+    "start:storybook": "start-storybook --docs -p 9001 -c ./.storybook"
+  },
+  "dependencies": {
+    "@react-navigation/web": "^1.0.0-alpha.9",
+    "@storybook/addon-docs": "5.3.0-rc.7",
+    "@storybook/addon-options": "5.3.0-rc.7",
+    "@storybook/addons": "5.3.0-rc.7",
+    "@storybook/cli": "5.3.0-rc.7",
+    "@storybook/preset-create-react-app": "^1.5.0",
+    "@storybook/react": "5.3.0-rc.7",
+    "@storybook/theming": "5.3.0-rc.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-art": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-native-web": "0.11.7",
+    "react-navigation": "^4.0.10",
+    "react-navigation-stack": "^1.10.3",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^4.4.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-react-native-web": "^0.11.7",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2"
+  }
+}

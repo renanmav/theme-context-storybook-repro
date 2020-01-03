@@ -1,0 +1,66 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import * as Stories from './Button.stories.js';
+
+<Meta title="Components|Button" />
+
+# Button
+
+## Props
+
+<Props of={Stories.ofProps} />
+
+### text
+
+The text that will be shown by the button.
+
+<Preview withSource="none">
+  <Story name="text">
+    <Stories.text />
+  </Story>
+</Preview>
+
+### size
+
+Which size the button should have. Accepts `large`, `medium` or `small`. Large and Medium buttons have a 7% gutter on both sides.
+
+<Preview withSource="none">
+  <Story name="size">
+    <Stories.size />
+  </Story>
+</Preview>
+
+### type
+
+Tells which type this button has. Accepts `primary`, `inverse`, `elevated` or `outline`.
+
+<Preview withSource="none">
+  <Story name="type">
+    <Stories.type />
+  </Story>
+</Preview>
+
+### disabled
+
+Prevent all interactions with the button.
+
+<Preview withSource="none">
+  <Story name="disabled">
+    <Stories.disabled />
+  </Story>
+</Preview>
+
+### onPress
+
+Called when the button is pressed by a pointer or keyboard.
+
+<Preview withSource="none">
+  <Story name="onPress">
+    <Stories.onPress />
+  </Story>
+</Preview>
+
+## Example of usage
+
+```js
+<Button text="Press me" type="inverse" size="large" onPress={() => console.log('Hello world')} />
+```

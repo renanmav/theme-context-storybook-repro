@@ -1,0 +1,38 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import * as Stories from './Typography.stories.js';
+
+<Meta title="Components|Typography" />
+
+# Typography
+
+## Props
+
+<Props of={Stories.ofProps} />
+
+### variant
+
+Which text variant that will be used to shown the message. Accepts either one of the following:
+- `h1`
+- `h2`
+- `h3`
+- `h4`
+- `btn1`
+- `btn2`
+- `btn3`
+- `b1`
+- `b2`
+- `cap`
+- `a1`
+- `a2`
+
+<Preview withSource="none">
+  <Story name="variant">
+    <Stories.variant />
+  </Story>
+</Preview>
+
+## Example of usage
+
+```js
+<Typo variant="b1">Foo is bar</Typo>
+```
